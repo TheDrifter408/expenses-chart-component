@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+body {
+  background-color: var(--cream);
+  font-family: var(--ff);
+  font-size: var(--ff-size);
+  color:var(--very-pale-orange);
+  display:grid;
+  place-content: center;
+  height: 100vh;
+}
+
+section {
+  padding: 0.25rem 3rem;
+}
+
+/*Utility classes*/
+.grid {
+  display:grid;
+}
+
+.flex {
+  display:flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-1 {
+  gap:1rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.content-center {
+  place-content:center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.margin-inline-auto {
+  margin-inline:auto;
+}
+
+.w-full {
+  width:100%;
+}
+.w-90 {
+  width:90%;
+}
+/*Custom Classes*/
+.balance {
+  background-color: var(--soft-red);
+  border-radius: 1rem;
+  height:6rem;
+  padding: 1em;
+}
+
+.circle {
+  background-color: var(--dark-brown);
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+}
+
+.chart-ctn {
+  background-color: var(--very-pale-orange);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.chart-ctn h1 {
+  color: var(--medium-brown);
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+}
+
+
+.bar-parent p {
+  color:hsl(28, 10%, 53%);
+  text-align:center;
+  font-size:1rem;
+}
+
+.bar-parent span {
+  transform: rotate(180deg);
+  border-radius: 0.5rem;
+  background-color: var(--dark-brown);
+  color:var(--cream);
+  padding: 0.25rem 0.25rem;
+  font-size: 0.75rem;
+  font-weight: var(--w-400);
+  margin:0.1rem;
+  visibility: hidden;
+}
+
+.bar:hover {
+  background-color: var(--cyan) !important;
+}
+
+.bar-parent:hover span {
+  visibility: visible;
+}
+
+.breakdown-ctn {
+  border-top:2px solid hsl(28, 10%, 53%);
+  width:90%;
+  margin-top:1em;
+  padding: 0.55rem 0.15rem;
+}
+
+.breakdown-ctn p {
+  color:var(--medium-brown);
+}
+
+.stats .total {
+  padding:0;
+  margin:0;
+  font-size: 1.75rem;
+  color:var(--dark-brown);
+  font-weight: var(--w-700);
+}
+
+.stats p {
+  color:var(--medium-brown);
+  padding:0;
+  margin:0;
+  text-align: right;
+  text-wrap:wrap;
+}
+.stats span {
+  display:block;
+  font-weight: var(--w-700);
+  color:var(--dark-brown);
+}
+
+.credits {
+  margin-top:25%;
+  background-color: var(--cyan);
+  text-align: center;
+  padding:0.25rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+
+:root {
+  /* Primary */
+  --soft-red:hsl(10, 79%, 65%);
+  --cyan:hsl(186, 34%, 60%);
+  /* Neutral */
+  --dark-brown:hsl(25, 47%, 15%);
+  --medium-brown:hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+  /* font family*/
+  --ff: "DM Sans",sans-serif;
+  --ff-size:1.125rem;
+  --w-400:400;
+  --w-700:700;
+}
