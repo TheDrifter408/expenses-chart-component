@@ -48,8 +48,8 @@ One of the challenge requirements was to implement hover states for each bar, th
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/TheDrifter408/expenses-chart-component)
+- Live Site URL: [Vercel](https://expenses-chart-component-lemon.vercel.app/)
 
 ## My process
 
